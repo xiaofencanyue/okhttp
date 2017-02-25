@@ -10,41 +10,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.lenovo.okhttp.MainActivity">
 
-    <LinearLayout
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1"
-        android:layout_alignParentTop="true"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView1"
         android:layout_centerHorizontal="true"
-        android:weightSum="1">
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:src="@mipmap/ic_launcher"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText1"
-            android:layout_weight=".2"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/button1"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_weight=".8"
-            android:onClick="downloadUrl"
-            android:text="go"/>
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:layout_below="@+id/linearLayout1"
+        android:id="@+id/button1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:scrollbars="vertical"
-        android:fadeScrollbars="false"/>
-
+        android:layout_centerVertical="true"
+        android:text="下载图片"/>
 </RelativeLayout>
